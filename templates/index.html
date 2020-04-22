@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html>
+  <style>
+input[type=text], select {
+  width: 100%;
+  padding: 15px 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 15px 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: white;
+  color: #AFAFAF;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #AFAFAF ;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: white;
+  background-color: #AFAFAF;
+}
+
+input[type=file] {
+  width: 100%;
+  padding: 15px 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #808080y;
+  padding: 1px;
+}
+
+head{
+  background-color: #E6E6E6
+}
+body{
+  background-color: #E6E6E6
+}
+h1{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-alignment: center;
+  color: #535353
+}
+h1:hover{
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent
+
+}
+a{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-alignment: center;
+  color: #535353
+
+
+}
+input[type=button] {
+  width: 100%;
+  background-color: white;
+  color: #AFAFAF;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #AFAFAF ;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+</style>
+	<head>
+    <title>Homework Submission</title>
+    <h1>Homework Submission</h1>
+     <DD><a href="https://www.youtube.com/watch?v=bSxLo80onEI"><IMG SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1mNlXq79G9QmL335Ba15HhebXk-mlxAzaL1A3FK4zBinfJPl-&usqp=CA"></a>  </DD>
+	</head>
+  <body>
+    <form action ="/" method ='POST' enctype="multipart/form-data">
+    <p style="font-family:Helvetica">Name: <input type ='text' placeholder='Enter Your Name' name = 'name'/> <br/> </p>
+
+    <d style="font-family:Helvetica">Class: <input type = 'text' name = 'classs'  /> <br/> </d>
+
+    <t style = "font-family:Helvetica">Date: <input type = 'date' name = 'date'> </t>
+
+    <f style="font-family:Helvetica"><input type= "file" name="photo" /> <br/></f>
+
+    <input type ='submit' value = 'Submit Homework'>
+
+    <hr />
+    <l style  = "font-family:Helvetica"><center>
+    {{ message }} <br/>
+    {{ name }} <br />
+    {{ classs }} <br />
+    {{ date }} <br />
+    {{ filename }} <br />
+    <center>
+    </l>
+
+
+    {% for line in lines %}
+    <p>{{ line }}</p>
+    {% endfor %}
+</body>
+</html>
